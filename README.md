@@ -10,3 +10,10 @@ La gestion des transactions est assurée par Spring aussi ;
 Le framework Spring Security assure la partie sécurité;
 le framwork angular assure la partie front-end;
 
+![alt tag](Client/src/assets/accounts.PNG)
+![alt tag](Client/src/assets/delete.PNG)
+![alt tag](Client/src/assets/op.PNG)
+![alt tag](Client/src/assets/save.PNG)
+
+
+

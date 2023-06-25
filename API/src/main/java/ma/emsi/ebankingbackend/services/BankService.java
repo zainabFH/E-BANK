@@ -13,12 +13,11 @@ import org.springframework.stereotype.Service;
 public class BankService {
     @Autowired
     private BankAccountRepository bankAccountRepository;
-
     public void consulter(){
         BankAccount bankAccount=
-                bankAccountRepository.findById("081fff7a-7452-46c2-8ee3-072ca6c9ea61 ").orElse(null);
-        if (bankAccount!=null) {
-            System.out.println("*******************************");
+                bankAccountRepository.findById("0b36be78-8d5d-446b-9f20-37eadc9d3c3b").orElse(null);
+        if(bankAccount!=null) {
+            System.out.println("*****************************");
             System.out.println(bankAccount.getId());
             System.out.println(bankAccount.getBalance());
             System.out.println(bankAccount.getStatus());
@@ -32,9 +31,7 @@ public class BankService {
             }
             bankAccount.getAccountOperations().forEach(op -> {
                 System.out.println(op.getType() + "\t" + op.getOperationDate() + "\t" + op.getAmount());
-
             });
-
-
-    }}
+        }
+    }
 }
